@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Annual Tech Conference 2024</h1>
+            <p>Join us on July 15, 2024, for an unforgettable experience!</p>
+            <button onclick="scrollToForm()">Register Now</button>
+        </div>
+    </header>
+
+    <section class="event-details">
+        <h2>Event Details</h2>
+        <p>Date: July 15, 2024</p>
+        <p>Location: Tech Convention Center, Silicon Valley</p>
+        <h3>Agenda</h3>
+        <ul>
+            <li>9:00 AM - Opening Keynote</li>
+            <li>10:00 AM - Breakout Sessions</li>
+            <li>12:00 PM - Lunch</li>
+            <li>1:00 PM - Workshops</li>
+            <li>4:00 PM - Closing Remarks</li>
+        </ul>
+        <h3>Speakers</h3>
+        <p>Featuring industry leaders from top tech companies.</p>
+    </section>
+
+    <section class="registration-form" id="registration-form">
+        <h2>Register Now</h2>
+        <form id="event-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone">
+            <button type="submit">Save Your Spot</button>
+        </form>
+    </section>
+
+    <section class="social-proof">
+        <h2>What Past Attendees Say</h2>
+        <div class="testimonial">
+            <p>"This conference was a game-changer for my career!" - Aman Patel </p>
+        </div>
+        <div class="testimonial">
+            <p>"Incredible speakers and networking opportunities." - Raman Rathore</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #42556c;
+    ;
+    /* Soft blue background */
+    color: #333;
+    /* Dark text color */
+}
+
+.calculator {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Light gray background with slight transparency */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    border: 1px solid #ccc;
+    /* Light gray border */
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 26px;
+    color: #333;
+    /* Dark text color */
+}
+
+.display {
+    background-color: #222;
+    /* Dark gray background */
+    color: #fff;
+    /* White text color */
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    min-height: 50px;
+    font-size: 20px;
+}
+
+.expression {
+    font-size: 16px;
+    color: #ccc;
+    /* Light gray text color */
+}
+
+.result {
+    font-size: 24px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7d907f;
+    ;
+    /* Light gray background */
+    color: #333;
+    /* Dark text color */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #ccc;
+    /* Slightly darker gray background on hover */
+}
+
+.button:active {
+    transform: scale(1.05);
+    /* Scale the button slightly on click */
+}
+
+.operator {
+    background-color: #f9a825;
+    /* Orange background for operators */
+    color: #fff;
+    /* White text color */
+}
+
+.operator:hover {
+    background-color: #f57f17;
+    /* Darker orange background on hover */
+}
+
+.equal {
+    grid-column: span 4;
+    background-color: #29b6f6;
+    /* Blue background for equals button */
+    color: #fff;
+    /* White text color */
+}
+
+.equal:hover {
+    background-color: #039be5;
+    /* Darker blue background on hover */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 341px),
+screen and (max-height:500px) {
+    .calculator {
+        width: 80%;
+        height: 85%;
+    }
+
+    .button {
+        font-size: 9px;
+        padding: 15px;
+    }
+
+    .display {
+        font-size: 15px;
+    }
+}
