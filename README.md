@@ -1,2 +1,2 @@
-# Task--01-Codsoft-
+# Tasks-Codsoft-
 codsoft tasks
